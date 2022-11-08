@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <div className="w-full h-screen bg-bgColor">
       <div className="mx-auto w-full h-full flex justify-between items-center px-4 md:px-[30px]">
-        <div className="max-w-[1000px] w-full mx-auto border-red-100 rounded-[50px] shadow-xl md:flex-col lg:flex-row flex justify-center md:justify-between items-center px-[30px] py-[50px] lg:p-[60px] text-center lg:text-left">
+        <div className="max-w-[1000px] w-full mx-auto border-red-100 rounded-[50px] shadow-xl shadow-gray-400 md:flex-col lg:flex-row flex justify-center md:justify-between items-center px-[30px] py-[50px] lg:p-[60px] text-center lg:text-left">
           <div className="">
             <p className="uppercase text-[16px] lg:text-[18px] text-textColor opacity-70">
               welcome to my portfolio

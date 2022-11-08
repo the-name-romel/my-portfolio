@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="flex max-w-[1200px] w-full h-full mx-auto px-[15px] md:px-[30px] lg:px-10 justify-between items-center bg-bgColor">
         <h1 className="text-[32px] text-textColor">r.acopra</h1>
 
-        <div className="md:hidden" onClick={menuClick}>
+        <div className="md:hidden hover:scale-105" onClick={menuClick}>
           <FaBars size={24} />
         </div>
 
@@ -43,16 +43,22 @@ const Navbar = () => {
       <div
         className={
           toggle
-            ? "fixed top-0 left-0 w-full h-screen bg-black/70 z-50 md:hidden"
-            : "hidden"
+            ? "fixed top-0 left-0 w-full h-screen bg-black/70 z-50 md:hidden duration-300"
+            : ""
         }
       >
-        <div className="fixed top-0 left-0 h-screen w-[75%] bg-bgColor px-4 flex flex-col justify-between">
-          <div className="flex w-full h-[80px] justify-between items-center">
+        <div
+          className={
+            toggle
+              ? "fixed top-0 left-0 h-screen w-[75%] sm:w-[55%] bg-bgColor px-4 flex flex-col justify-between ease-in duration-300"
+              : "fixed top-0 left-[-100%] h-screen w-[75%] sm:w-[55%] bg-bgColor px-4 flex flex-col justify-between ease-in duration-300"
+          }
+        >
+          <div className="flex w-full h-[80px] justify-between items-center transition ease-in-out duration-300">
             <h1 className="text-[32px] text-textColor">r.acopra</h1>
 
             <div
-              className="w-9 h-9 rounded-full shadow-lg flex justify-center items-center group hover:scale-105"
+              className="w-9 h-9 rounded-full shadow-lg shadow-gray-400 flex justify-center items-center group hover:scale-105"
               onClick={menuClick}
             >
               <FaTimes size={22} className="group-hover:scale-105" />
@@ -69,16 +75,16 @@ const Navbar = () => {
 
           <div className="h-[150px] flex flex-col justify-center items-start gap-1">
             <p className="text-[18px] text-primary">LET'S CONNECT</p>
-            <div className="flex gap-10">
+            <div className="flex gap-5">
               <a
                 href="https://facebook.com"
-                className="bg-bgColor rounded-full shadow-xl flex justify-center items-center w-[43px] h-[43px] cursor-pointer hover:scale-105 ease-in-out duration-300 group"
+                className="bg-bgColor rounded-full shadow-xl shadow-gray-400 flex justify-center items-center w-[43px] h-[43px] cursor-pointer hover:scale-105 ease-in-out duration-300 group"
               >
                 <FaFacebook className="text-primary opacity-80 group-hover:opacity-100 text-[22px]" />
               </a>
               <a
                 href="https://github.com/the-name-romel"
-                className="bg-bgColor rounded-full shadow-xl flex justify-center items-center w-[43px] h-[43px] cursor-pointer hover:scale-105 ease-in-out duration-300 group"
+                className="bg-bgColor rounded-full shadow-xl shadow-gray-400 flex justify-center items-center w-[43px] h-[43px] cursor-pointer hover:scale-105 ease-in-out duration-300 group"
               >
                 <FaGithub className="text-primary opacity-80 group-hover:opacity-100 text-[22px]" />
               </a>
