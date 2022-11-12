@@ -8,11 +8,16 @@
   body {
     @apply font-outfit text-textColor;
   }
-  li {
+  li,
+  .link {
     @apply cursor-pointer;
+  }
+  p {
+    @apply text-[18px];
   }
 }
 
-li:hover {
+li:hover,
+.link:hover {
   color: #3f37c9;
 }

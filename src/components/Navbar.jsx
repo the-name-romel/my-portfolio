@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { FaBars, FaTimes, FaFacebook, FaGithub } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [shadow, setShadow] = useState(false);
@@ -32,8 +33,29 @@ const Navbar = () => {
         </div>
 
         <ul className="hidden md:flex space-x-10 uppercase text-base">
-          <li>home</li>
-          <li>about</li>
+          <Link
+            to="home"
+            spy={true}
+            smooth={true}
+            duration={500}
+            delay={300}
+            isDynamic={true}
+            className="link"
+          >
+            home
+          </Link>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-50}
+            duration={300}
+            delay={500}
+            isDynamic={true}
+            className="link"
+          >
+            about
+          </Link>
           <li>resume</li>
           <li>projects</li>
           <li>contact</li>
@@ -67,7 +89,7 @@ const Navbar = () => {
 
           <ul className="flex flex-col space-y-10 uppercase text-[18px] justify-center items-center">
             <li>home</li>
-            <li>about</li>
+            <li href="about">about</li>
             <li>resume</li>
             <li>projects</li>
             <li>contact</li>
