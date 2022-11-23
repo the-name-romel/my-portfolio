@@ -3,7 +3,7 @@ import { css, html, js, node, react, tailwind } from "../assets/img";
 
 const About = () => {
   return (
-    <div className="w-full bg-bgColor" name="about">
+    <div className="w-full bg-bgColor mb-12" name="about">
       <div className="flex flex-col max-w-[1200px] md:h-screen mx-auto">
         <div className="text-center px-5 py-[30px] space-y-[20px]">
           <div className="mx-auto">
@@ -14,7 +14,7 @@ const About = () => {
             Hello! I am Romel Acopra, a 3rd year Bachelor of Science in
             Information Technology student at Sorsogon State University - Bulan
             Campus. I love to explore to learn different knowledge and learning.
-            I do love coding and chess!
+            I do also love coding and chess!
           </p>
         </div>
         <div className="w-ful flex flex-col justify-center items-center">
@@ -24,26 +24,52 @@ const About = () => {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 justify-center items-center w-full gap-[50px] py-[20px] max-w-[1000px]">
             <div className="flex justify-center items-center">
-              <img src={html} alt="HTML logo" className="w-[100px]" />
+              <img
+                src={html}
+                alt="HTML logo"
+                title="HTML"
+                className="w-[100px] hover:scale-105 duration-300 ease-in-out"
+              />
             </div>
             <div className="flex justify-center items-center">
-              <img src={css} alt="CSS logo" className="w-[100px]" />
+              <img
+                src={css}
+                alt="CSS logo"
+                title="CSS"
+                className="w-[100px] hover:scale-105 duration-300 ease-in-out"
+              />
             </div>
             <div className="flex justify-center items-center">
-              <img src={js} alt="JavaScript logo" className="w-[100px]" />
+              <img
+                src={js}
+                alt="JavaScript logo"
+                title="JavaScript"
+                className="w-[100px] hover:scale-105 duration-300 ease-in-out"
+              />
             </div>
             <div className="flex justify-center items-center">
               <img
                 src={tailwind}
                 alt="Tailwind CSS logo"
-                className="w-[100px]"
+                title="Tailwind CSS"
+                className="w-[100px] hover:scale-105 duration-300 ease-in-out"
               />
             </div>
             <div className="flex justify-center items-center">
-              <img src={react} alt="React JS logo" className="w-[100px]" />
+              <img
+                src={react}
+                alt="React JS logo"
+                title="React JS"
+                className="w-[100px] hover:scale-105 duration-300 ease-in-out"
+              />
             </div>
             <div className="flex justify-center items-center">
-              <img src={node} alt="NodeJS logo" className="w-[100px]" />
+              <img
+                src={node}
+                alt="NodeJS logo"
+                title="NodeJS"
+                className="w-[100px] hover:scale-105 duration-300 ease-in-out"
+              />
             </div>
           </div>
         </div>

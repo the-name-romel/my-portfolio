@@ -6,7 +6,7 @@
 
 @layer base {
   body {
-    @apply font-outfit text-textColor;
+    @apply font-outfit text-textColor bg-bgColor;
   }
   li,
   .link {

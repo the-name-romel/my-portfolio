@@ -48,7 +48,7 @@ const Navbar = () => {
             to="about"
             spy={true}
             smooth={true}
-            offset={-50}
+            offset={-60}
             duration={300}
             delay={500}
             isDynamic={true}
@@ -56,7 +56,18 @@ const Navbar = () => {
           >
             about
           </Link>
-          <li>resume</li>
+          <Link
+            to="resume"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={300}
+            delay={500}
+            isDynamic={true}
+            className="link"
+          >
+            resume
+          </Link>
           <li>projects</li>
           <li>contact</li>
         </ul>
@@ -65,7 +76,7 @@ const Navbar = () => {
       <div
         className={
           toggle
-            ? "fixed top-0 left-0 w-full h-screen bg-black/70 z-50 md:hidden duration-300"
+            ? "fixed top-0 left-0 w-full h-screen bg-black/70 z-50 md:hidden duration-300 ease-in-out"
             : ""
         }
       >
@@ -88,9 +99,44 @@ const Navbar = () => {
           </div>
 
           <ul className="flex flex-col space-y-10 uppercase text-[18px] justify-center items-center">
-            <li>home</li>
-            <li href="about">about</li>
-            <li>resume</li>
+            <Link
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+              delay={300}
+              isDynamic={true}
+              className="link"
+              onClick={menuClick}
+            >
+              home
+            </Link>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-60}
+              duration={300}
+              delay={500}
+              isDynamic={true}
+              className="link"
+              onClick={menuClick}
+            >
+              about
+            </Link>
+            <Link
+              to="resume"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={300}
+              delay={500}
+              isDynamic={true}
+              className="link"
+              onClick={menuClick}
+            >
+              resume
+            </Link>
             <li>projects</li>
             <li>contact</li>
           </ul>
