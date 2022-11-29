@@ -21,11 +21,11 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed bg-bgColor w-full h-20 shadow-lg z-50"
+          ? "fixed z-10 shadow-lg w-full h-20 backdrop-blur-[16px] bg-[rgba(236, 240, 243, 1)]"
           : "fixed bg-bgColor w-full h-20 z-50"
       }
     >
-      <div className="flex max-w-[1200px] w-full h-full mx-auto px-[15px] md:px-[30px] lg:px-10 justify-between items-center bg-bgColor">
+      <div className="flex max-w-[1200px] w-full h-full mx-auto px-[15px] md:px-[30px] lg:px-10 justify-between items-center">
         <h1 className="text-[32px] text-textColor">r.acopra</h1>
 
         <div className="md:hidden hover:scale-105" onClick={menuClick}>
@@ -141,7 +141,7 @@ const Navbar = () => {
             <li>contact</li>
           </ul>
 
-          <div className="h-[150px] flex flex-col justify-center items-start gap-1">
+          <div className="max-h-[150px] h-full flex flex-col justify-center items-start gap-1">
             <p className="text-[18px] text-primary">LET'S CONNECT</p>
             <div className="flex gap-5">
               <a
