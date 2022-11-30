@@ -11,7 +11,7 @@ function Resume() {
           <span className="text-[32px]">Education</span>
         </div>
         <div className="grid grid-cols-2 h-full">
-          <div className="border-r-[1px] border-black rounded-[35px] w-full flex flex-col text-center items-center justify-center h-[250px]">
+          <div className="border-r-[1px] border-black rounded-[35px] w-full flex flex-col text-center items-center justify-center h-[250px] px-2">
             <span className="font-bold">
               Bachelor of Science in Information Technology
             </span>
@@ -23,7 +23,7 @@ function Resume() {
           </div>
           <div className="border-l-[1px] border-black rounded-[35px] w-full flex items-center justify-center h-[250px]"></div>
           <div className="border-r-[1px] border-black rounded-[35px] w-full flex items-center justify-center h-[250px]"></div>
-          <div className="border-l-[1px] border-black rounded-[35px] w-full flex flex-col text-center items-center justify-center h-[250px]">
+          <div className="border-l-[1px] border-black rounded-[35px] w-full flex flex-col text-center items-center justify-center h-[250px] px-2">
             <span className="font-bold">
               Secondary <br /> EIM and GAS
             </span>
@@ -33,10 +33,10 @@ function Resume() {
               <strong>2014 - 2020</strong>
             </div>
           </div>
-          <div className="border-r-[1px] border-black rounded-[35px] w-full flex flex-col text-center items-center justify-center h-[250px]">
+          <div className="border-r-[1px] border-black rounded-[35px] w-full flex flex-col text-center items-center justify-center h-[250px] px-2">
             <span className="font-bold">Primary</span>
             <p>
-              Magallanes Nort Central School <br /> Magallanes, Sorsogon
+              Magallanes North Central School <br /> Magallanes, Sorsogon
             </p>
             <div className="flex items-center gap-1">
               <FaCalendarDay className="text-primary" />{" "}
