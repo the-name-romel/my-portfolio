@@ -83,7 +83,7 @@ const Navbar = () => {
         <div
           className={
             toggle
-              ? "fixed top-0 left-0 h-screen w-[75%] sm:w-[55%] bg-bgColor px-4 flex flex-col justify-between ease-in duration-300"
+              ? "fixed top-0 left-0 h-screen w-[75%] sm:w-[55%] bg-bgColor px-4 pb-10 flex flex-col justify-between ease-in duration-300"
               : "fixed top-0 left-[-100%] h-screen w-[75%] sm:w-[55%] bg-bgColor px-4 flex flex-col justify-between ease-in duration-300"
           }
         >
