@@ -34,6 +34,7 @@ const Navbar = () => {
 
         <ul className="hidden md:flex space-x-10 uppercase text-base">
           <Link
+            activeClass="active"
             to="home"
             spy={true}
             smooth={true}
@@ -45,10 +46,11 @@ const Navbar = () => {
             home
           </Link>
           <Link
+            activeClass="active"
             to="about"
             spy={true}
             smooth={true}
-            offset={-60}
+            offset={-50}
             duration={300}
             delay={500}
             isDynamic={true}
@@ -57,6 +59,7 @@ const Navbar = () => {
             about
           </Link>
           <Link
+            activeClass="active"
             to="resume"
             spy={true}
             smooth={true}
@@ -68,7 +71,19 @@ const Navbar = () => {
           >
             resume
           </Link>
-          <li>projects</li>
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-80}
+            duration={300}
+            delay={500}
+            isDynamic={true}
+            className="link"
+          >
+            projects
+          </Link>
           <li>contact</li>
         </ul>
       </div>
@@ -137,11 +152,23 @@ const Navbar = () => {
             >
               resume
             </Link>
-            <li>projects</li>
+            <Link
+              to="projects"
+              spy={true}
+              smooth={true}
+              offset={-80}
+              duration={300}
+              delay={500}
+              isDynamic={true}
+              className="link"
+              onClick={menuClick}
+            >
+              projects
+            </Link>
             <li>contact</li>
           </ul>
 
-          <div className="max-h-[150px] h-full flex flex-col justify-center items-start gap-1">
+          <div className="max-h-[150px] w-full h-full flex flex-col justify-center items-center gap-1">
             <p className="text-[18px] text-primary">LET'S CONNECT</p>
             <div className="flex gap-5">
               <a

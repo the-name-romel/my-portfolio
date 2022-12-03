@@ -21,3 +21,9 @@ li:hover,
 .link:hover {
   color: #3f37c9;
 }
+
+.active {
+  color: #3f37c9;
+  font-weight: bold;
+  transition: all 200ms ease-in-out;
+}
