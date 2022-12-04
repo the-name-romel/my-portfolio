@@ -15,9 +15,9 @@
   p {
     @apply text-[18px];
   }
-  
+
   input {
-    @apply w-full h-[40px] rounded-[10px] bg-primary bg-opacity-50 px-[10px]
+    @apply w-full h-[40px] rounded-[10px] bg-primary bg-opacity-50 px-[10px];
   }
 }
 
@@ -34,14 +34,20 @@ li:hover,
 
 input::placeholder {
   color: white;
-  opacity: 1;
+  opacity: 0.8;
 }
 
-::-webkit-input-placeholder { 
+::-webkit-input-placeholder {
   color: white;
 }
 
+textarea,
 textarea::placeholder {
   color: white;
   padding: 10px;
+}
+
+input,
+textarea {
+  border: none;
 }
