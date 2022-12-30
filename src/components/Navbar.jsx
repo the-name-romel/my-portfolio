@@ -32,7 +32,7 @@ const Navbar = () => {
           <FaBars size={24} />
         </div>
 
-        <ul className="hidden md:flex space-x-10 uppercase text-base">
+        <ul className="hidden md:flex space-x-10 uppercase text-base items-center">
           <Link
             activeClass="active"
             to="home"
@@ -84,7 +84,27 @@ const Navbar = () => {
           >
             projects
           </Link>
-          <li>contact</li>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-40}
+            duration={300}
+            delay={500}
+            isDynamic={true}
+            className="link"
+          >
+            contact
+          </Link>
+          <a
+            type="button"
+            href=""
+            download
+            className="bg-primary text-white text-[16px] px-[28px] py-[16px] hover:bg-opacity-80"
+          >
+            Download CV
+          </a>
         </ul>
       </div>
 

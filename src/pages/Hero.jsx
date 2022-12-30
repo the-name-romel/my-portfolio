@@ -1,5 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import { FaFacebook, FaGithub } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export const Hero = () => {
   return (
@@ -31,8 +32,20 @@ export const Hero = () => {
                 />
               </span>
             </h2>
-            <button className="border bg-primary rounded-[8px] text-white text-[18px] px-[28px] py-[16px] mt-[30px] hover:bg-opacity-80">
-              Contact me
+            <button>
+              <Link
+                type="button"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-43}
+                duration={300}
+                delay={500}
+                isDynamic={true}
+                className="border-none bg-primary rounded-[8px] text-white text-[18px] px-[28px] py-[16px] mt-[30px] hover:bg-opacity-80"
+              >
+                Contact me
+              </Link>
             </button>
           </div>
 
