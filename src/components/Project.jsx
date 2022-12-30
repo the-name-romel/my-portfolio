@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Project = ({ image, alt, title }) => {
+export const Project = ({ image, alt, title, link }) => {
   return (
     <div className="relative max-h-[342px] max-w-[387px] h-full w-full rounded-[10px] overflow-hidden duration-300">
       <img src={image} alt={alt} className="object-cover w-full h-full" />
@@ -10,7 +10,8 @@ export const Project = ({ image, alt, title }) => {
         </h1>
         <div className="opacity-0 group-hover:opacity-100 duration-500 ease">
           <a
-            href=""
+            target="_blank"
+            href={link}
             className="border bg-bgColor rounded-[8px] text-textColor text-[18px] px-[28px] py-[16px] mt-[30px] hover:bg-opacity-80"
           >
             Visit
