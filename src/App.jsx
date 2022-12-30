@@ -1,3 +1,4 @@
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import { Hero, About, Resume, Projects, Contact } from "./pages";
 
@@ -10,6 +11,7 @@ function App() {
       <Resume />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }
