@@ -23,11 +23,13 @@ const Projects = () => {
           title="Weather App"
           alt="image"
           image="https://is2-ssl.mzstatic.com/image/thumb/Purple122/v4/b2/d0/ef/b2d0efa6-060a-76a5-d169-83ca6011c193/AppIcon-0-0-1x_U007emarketing-0-0-0-10-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/1200x630wa.png"
+          link="https://github.com/the-name-romel/weather-app"
         />
         <Project
           title="Chat App"
           alt="image"
           image="http://www.yabb.com/blog/wp-content/uploads/2019/06/Chat-Apps-2019.jpg"
+          link="https://github.com/the-name-romel/chat-app"
         />
         <Project
           title="Portfolio"
