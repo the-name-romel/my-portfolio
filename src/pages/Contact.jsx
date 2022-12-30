@@ -31,8 +31,8 @@ function Contact() {
               name=""
               id=""
               rows="10"
-              placeholder="I love chicken nuggeeeets..."
-              className="w-full rounded-[10px] bg-primary bg-opacity-50"
+              placeholder="Type your message here...."
+              className="w-full rounded-[10px] bg-primary bg-opacity-50 p-[5px]"
             />
             <button
               type="submit"
