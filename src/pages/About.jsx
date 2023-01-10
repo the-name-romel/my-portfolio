@@ -20,7 +20,7 @@ const About = () => {
         <div className="w-ful flex flex-col justify-center items-center">
           <div className="text-center space-y-[20px]">
             <h1 className="text-primary text-[32px]">SKILLS</h1>
-            <p>There are the technologies I’m currently using and learning: </p>
+            <p>These are the technologies I’m currently using and learning: </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-3 justify-center items-center w-full gap-[50px] py-[20px] max-w-[1000px]">
             <div className="flex justify-center items-center">
